@@ -1,0 +1,13 @@
+# Race Condition Detector Configuration
+min_confidence: 0.75
+max_threads: 16
+iterations: 1000
+timeout_per_test: 10
+ignore_patterns:
+  - "test"
+  - "__pycache__"
+  - ".venv"
+  - "venv"
+enable_multiprocessing: true
+enable_asyncio_detection: true
+enable_db_detection: true
