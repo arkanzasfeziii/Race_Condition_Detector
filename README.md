@@ -1,4 +1,4 @@
-# Race Condition Detector (v2.0)
+[table-4bbd9267-a1d9-412e-b2bd-e603ffdb2a4b.csv](https://github.com/user-attachments/files/24391588/table-4bbd9267-a1d9-412e-b2bd-e603ffdb2a4b.csv)# Race Condition Detector (v2.0)
 
 > 🔍 **Professional Static & Dynamic Race Condition Vulnerability Scanner for Python**
 
@@ -41,24 +41,16 @@ python race_detector.py --self-test --verbose
 ```
 
 🧾 Supported Race Types
-Type
-Description
-TOCTOU
-Time-of-Check to Time-of-Use (e.g., os.path.exists() → open())
-Read-Modify-Write
-Non-atomic +=, -= on shared variables
-Unsynchronized Access
-Global/mutable state accessed without locks
-File Race
-Unsafe file operations in concurrent contexts
-Signal Handler Race
-Signal handlers + threads = dangerous
-Database Race
-Concurrent SQLite without proper locking
-Asyncio Race
-Shared state in coroutines without asyncio.Lock
-Tempfile Race
-Predictable temp files with delete=False
+[Uploading tableType,Description
+TOCTOU,"Time-of-Check to Time-of-Use (e.g., "os.path.exists() → open())
+Read-Modify-Write,Non-atomic +=", "-= on shared variables
+Unsynchronized Access,Global/mutable state accessed without locks
+File Race,Unsafe file operations in concurrent contexts
+Signal Handler Race,Signal handlers + threads = dangerous
+Database Race,Concurrent SQLite without proper locking
+Asyncio Race,Shared state in coroutines without asyncio.Lock
+Tempfile Race,Predictable temp files with delete=False-4bbd9267-a1d9-412e-b2bd-e603ffdb2a4b.csv…]()
+
 
 🛠️ Configuration (detector.yaml)
 Example config:
