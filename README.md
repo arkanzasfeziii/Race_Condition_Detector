@@ -1,4 +1,4 @@
-<img width="561" height="217" alt="image" src="https://github.com/user-attachments/assets/bf3ac407-c3c6-4d02-a4df-42c2660c7e9f" />[table-4bbd9267-a1d9-412e-b2bd-e603ffdb2a4b.csv](https://github.com/user-attachments/files/24391588/table-4bbd9267-a1d9-412e-b2bd-e603ffdb2a4b.csv)# Race Condition Detector (v2.0)
+# Race Condition Detector (v2.0)
 
 > 🔍 **Professional Static & Dynamic Race Condition Vulnerability Scanner for Python**
 
