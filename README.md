@@ -1,4 +1,4 @@
-[table-4bbd9267-a1d9-412e-b2bd-e603ffdb2a4b.csv](https://github.com/user-attachments/files/24391588/table-4bbd9267-a1d9-412e-b2bd-e603ffdb2a4b.csv)# Race Condition Detector (v2.0)
+<img width="561" height="217" alt="image" src="https://github.com/user-attachments/assets/bf3ac407-c3c6-4d02-a4df-42c2660c7e9f" />[table-4bbd9267-a1d9-412e-b2bd-e603ffdb2a4b.csv](https://github.com/user-attachments/files/24391588/table-4bbd9267-a1d9-412e-b2bd-e603ffdb2a4b.csv)# Race Condition Detector (v2.0)
 
 > 🔍 **Professional Static & Dynamic Race Condition Vulnerability Scanner for Python**
 
@@ -41,16 +41,22 @@ python race_detector.py --self-test --verbose
 ```
 
 🧾 Supported Race Types
-[Uploading tableType,Description
-TOCTOU,"Time-of-Check to Time-of-Use (e.g., "os.path.exists() → open())
-Read-Modify-Write,Non-atomic +=", "-= on shared variables
-Unsynchronized Access,Global/mutable state accessed without locks
-File Race,Unsafe file operations in concurrent contexts
-Signal Handler Race,Signal handlers + threads = dangerous
-Database Race,Concurrent SQLite without proper locking
-Asyncio Race,Shared state in coroutines without asyncio.Lock
-Tempfile Race,Predictable temp files with delete=False-4bbd9267-a1d9-412e-b2bd-e603ffdb2a4b.csv…]()
-
+```
++--------------------------------------+----------------------------------------------------------+
+| Race Type                            | Description                                              |
++--------------------------------------+----------------------------------------------------------+
+| Time-of-Check to Time-of-Use (TOCTOU)| File check followed by use — state may change in between |
+| Read-Modify-Write Atomicity Violation| Non-atomic operations like `x += 1` on shared variables  |
+| Unsynchronized Shared Resource Access | Shared state accessed without locks                     |
+| File-Based Race Condition            | Unsafe concurrent file operations                       |
+| Signal Handler Race                  | Signal handlers interacting with threads                 |
+| Non-Atomic Compound Operation        | Multi-step logic without atomicity                      |
+| Concurrent Global Variable Access    | Global vars used across threads without protection      |
+| Database Concurrency Issue           | SQLite or DB ops without proper thread safety           |
+| Asyncio Coroutine Race Condition     | Shared state in async coroutines without `asyncio.Lock` |
+| Temporary File Race                  | Predictable temp files (`delete=False`) in concurrency  |
++--------------------------------------+----------------------------------------------------------+
+```
 
 🛠️ Configuration (detector.yaml)
 Example config:
